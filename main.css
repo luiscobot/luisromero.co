@@ -1,0 +1,219 @@
+/* Depurador
+	 ========================================================================== */
+
+/* * { outline: 1px solid red; } */
+
+/* Fuente tipográfica
+	 ========================================================================== */
+
+@font-face {
+	font-family: 'geomanist-bold';
+	src: url('font/geomanist-bold-webfont.woff2') format('woff2'),
+			 url('font/geomanist-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'geomanist-regular';
+	src: url('font/geomanist-regular-webfont.woff2') format('woff2'),
+			 url('font/geomanist-regular-webfont.woff') format('woff');
+}
+
+/* Base
+	 ========================================================================== */
+
+html,
+body {
+	width: 100%;
+	font-size: 10px;
+	background-color: black;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.texto--resaltar { color: #ff4a00; }
+
+/* Tipografía
+	 ========================================================================== */
+
+h1,
+h2,
+h3,
+p,
+li { font-family: 'geomanist-bold', sans-serif; }
+
+h1 {
+	margin: 0;
+	color: white;
+	font-size: 3rem;
+	line-height: 3.6rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 2.4rem;
+	line-height: 3rem;
+}
+
+h3 {
+	margin: 0;
+	color: white;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+
+p {
+	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+
+li {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+}
+
+/* Secciones
+	 ========================================================================== */
+
+header,
+section { padding: 9.375% 7.5%; }
+
+.icono--titulo {
+	width: 24px;
+	margin-right: 12px;
+	align-self: flex-start;
+	fill: #ff4a00;
+}
+
+.proyectos h2,
+.contacto h2 {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* Encabezado
+	 ========================================================================== */
+
+header {
+	min-height: 85vh;
+	background-color: black;
+	color: white;
+}
+
+header p { margin-top: 30px; }
+
+header li {
+	display: flex;
+	align-items: center;
+}
+
+header li:first-of-type { margin-top: 12px; }
+
+header li:last-of-type { margin-top: 6px; }
+
+header svg {
+	width: 8px;
+	height: 12px;
+	margin-right: 6px;
+	fill: #ff4a00;
+	flex-shrink: 0;
+}
+
+/* Proyectos
+	 ========================================================================== */
+
+.proyectos { background-color: white; }
+
+.proyectos h2 { color: black; }
+
+.proyectos a {
+	position: relative;
+	display: inline-block;
+	width: calc(50% - 12px);
+	padding-top: calc(50% - 12px);
+	margin-top: 24px;
+	background-color: #ff4a00;
+	box-shadow: 0 0 3px 0 rgba(61, 61, 61, .50);
+	border-radius: 12px;
+}
+
+.contenido {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 12px;
+}
+
+.proyectos a:nth-of-type(odd) { margin-right: 24px; }
+
+.proyectos a:nth-of-type(-n+2) { margin-top: 30px; }
+
+.proyectos h3 { text-shadow: 0 0 3px rgba(61, 61, 61, .50); }
+
+.proyectos a svg {
+	width: 24px;
+	height: 24px;
+	align-self: flex-end;
+	fill: white;
+}
+
+/* Contactos
+	 ========================================================================== */
+
+.contacto {
+	background-color: black;
+	padding-bottom: 18.75%;
+}
+
+.contacto h2 { color: white; }
+
+.contacto .carta {
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+	margin-top: 30px;
+	border-radius: 6px;
+	background-color: white;
+	text-align: center;
+	transform: rotate(-1.5deg);
+}
+
+.info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px;
+}
+
+.contacto p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.contacto button {
+	padding: 12px 18px;
+	border: none;
+	border-radius: 18px;
+	font-family: 'geomanist-bold', sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	color: white;
+	background-color: #ff4a00;
+	box-shadow: 0 0 3px rgba(61, 61, 61, .50);
+	text-shadow: 0 0 3px rgba(61, 61, 61, .50);
+}
