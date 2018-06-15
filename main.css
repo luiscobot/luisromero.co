@@ -1,12 +1,12 @@
 /* Depurador
 	 ========================================================================== */
 
-* { outline: 1px solid rgba(255, 0, 0); }
+/* * { outline: 1px solid rgba(255, 0, 0); }
 * * { outline: 1px solid rgba(0, 255, 0); }
 * * * { outline: 1px solid rgba(0, 0, 255); }
 * * * * { outline: 1px solid rgba(255, 0, 255); }
 * * * * * { outline: 1px solid rgba(0, 255, 255); }
-* * * * * * { outline: 1px solid rgba(255, 255, 0); }
+* * * * * * { outline: 1px solid rgba(255, 255, 0); } */
 
 /* Fuente tipográfica
 	 ========================================================================== */
@@ -400,4 +400,85 @@ header svg {
 		line-height: 2.4rem;
 		box-shadow: 0 0 6px rgba(61, 61, 61, .50);
 	}
+}
+
+/* Tarjeta
+	 ========================================================================== */
+
+.ventana {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .9);
+}
+
+.ventana .tarjeta {
+	position: relative;
+	width: 248px;
+	padding-top: 248px;
+	text-align: left;
+	background-color: white;
+	border-radius: 12px;
+}
+
+.ventana h3 {
+	color: black;
+	width: 50%;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+}
+
+.ventana p {
+	font-family: 'geomanist-regular', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	position: absolute;
+	top: 50%;
+	width: calc(100% - 48px);
+}
+
+.ventana .caja {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 24px;
+}
+
+.ventana .pantallazo {
+	position: absolute;
+	top: -24px;
+	right: -24px;
+	width: 124px;
+	height: 124px;
+	background-color: #ff4a00;
+	border-radius: 12px;
+}
+
+.ventana .tarjeta--cerrar {
+	width: 30px;
+	fill: #ff4a00;
+	position: absolute;
+	bottom: calc(-30px + -18px);
+	right: 0;
+	margin-right: 18px;
+	margin-top: 18px;
+}
+
+.ventana span {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+	height: 13px;
+}
+
+.ventana span svg {
+	fill: white;
+	width: 18px;
 }
