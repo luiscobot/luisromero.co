@@ -232,6 +232,7 @@ header svg {
 	background-color: #ff4a00;
 	box-shadow: 0 0 3px 0 rgba(61, 61, 61, .50);
 	border-radius: 12px;
+	cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -411,7 +412,7 @@ header svg {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, .9);
@@ -469,6 +470,7 @@ header svg {
 	right: 0;
 	margin-right: 18px;
 	margin-top: 18px;
+	cursor: pointer;
 }
 
 .ventana span {
