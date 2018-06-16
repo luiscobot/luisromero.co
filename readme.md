@@ -1,3 +1,3 @@
-# Project 1: Personal Profile Page
+# Project 12: Online Portfolio
 
 for treehouse techdegree.
