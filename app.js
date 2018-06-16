@@ -1,6 +1,7 @@
 const TARJETA = document.getElementById('ventana');
 const CERRARICONO = document.getElementById('tarjeta--cerrar');
 const PROYECTOS = document.getElementsByClassName('proyecto');
+const boton = document.getElementById('boton');
 
 let datos = [
 	{
@@ -69,3 +70,9 @@ for (let iterador of PROYECTOS) {
 }
 
 CERRARICONO.addEventListener('click', ocultarTarjeta);
+
+const copy = clipboardCopy;
+
+boton.addEventListener('click', function () {
+  copy('hola@luisromero.co')
+})
