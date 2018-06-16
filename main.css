@@ -462,6 +462,12 @@ header svg {
 	border-radius: 12px;
 }
 
+.ventana .pantallazo img {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+}
+
 .ventana .tarjeta--cerrar {
 	width: 30px;
 	fill: #ff4a00;
@@ -473,14 +479,14 @@ header svg {
 	cursor: pointer;
 }
 
-.ventana span {
+.ventana a {
 	position: absolute;
 	bottom: 12px;
 	right: 12px;
 	height: 13px;
 }
 
-.ventana span svg {
+.ventana a svg {
 	fill: white;
 	width: 18px;
 }
