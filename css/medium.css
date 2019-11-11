@@ -1,0 +1,144 @@
+/* Consulta de medios (Más grande que phablet).
+	 ========================================================================== */
+
+@media (min-width: 768px) {
+
+	.párrafo { width: 90%; }
+
+	.proyectos .proyecto { width: 60%; }
+
+	.tarjeta--base .proyecto {
+		width: calc(100% - 30%);
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.proyecto > svg {
+		top: 24px;
+		right: 24px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.proyecto--portada h3 {
+		left: 24px;
+		right: 24px;
+		bottom: 24px;
+	}
+
+	.proyecto--info { padding: 24px; }
+
+	.contacto .carta {
+		width: 70%;
+		padding-top: 70%;
+	}
+
+	.carta--info { padding: 36px; }
+}
+
+/* Consulta de medios (Más grande que tablet).
+	 ========================================================================== */
+
+@media (min-width: 46.875rem) { /* 750px / 16px. */
+
+	header .caja-título {
+		width: 80%;
+		margin-top: 45px;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+		line-height: 5.4rem;
+	}
+
+	h2 {
+		font-size: 3.6rem;
+		line-height: 4.5rem;
+	}
+
+	h3, p {
+		font-size: 3rem;
+		line-height: 3.6rem;
+	}
+
+	.párrafo--pequeño, li, a, button {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+	}
+
+	header,
+	section:not(.tarjeta--base) { padding: 10.5% 12.5%; }
+
+	header .logo { width: 100px; }
+
+	.icono--subtítulo {
+		width: 36px;
+		margin-right: 24px;
+	}
+
+	.párrafo {
+		width: 95%;
+		margin-top: 45px;
+	}
+
+	ul svg {
+		width: 12px;
+		height: 18px;
+		margin-right: 9px;
+	}
+
+	ul li:first-of-type { margin-top: 18px; }
+
+	ul li:last-of-type { margin-top: 9px; }
+
+	.proyectos .proyecto { margin-top: 45px; }
+
+	.proyecto > svg {
+		top: 30px;
+		right: 30px;
+		width: 42px;
+		height: 42px;
+	}
+
+	.proyecto--portada h3 {
+		left: 30px;
+		right: 30px;
+		bottom: 30px;
+	}
+
+	.proyecto--acceso { padding: 30px 30px 0 30px }
+
+	.proyecto--acceso svg { height: 2.2rem; }
+
+	.proyecto--info { padding: 30px; }
+
+	.contacto .carta {
+		margin-top: 45px;
+		border-radius: 9px;
+	}
+
+	.carta::after {
+		height: 9px;
+		background: linear-gradient(135deg,
+																#3ca3d6 0%, #3ca3d6 11.7647058824%,
+																transparent 11.7647058824%, transparent 17.6470588236%,
+																#d63c3c 17.6470588236%, #d63c3c 29.411764706%,
+																transparent 29.411764706%, transparent 35.2941176472%,
+																#3ca3d6 35.2941176472%, #3ca3d6 47.0588235296%,
+																transparent 47.0588235296%, transparent 52.9411764708%,
+																#d63c3c 52.9411764708%, #d63c3c 64.7058823532%,
+																transparent 64.7058823532%, transparent 70.5882352944%,
+																#3ca3d6 70.5882352944%, #3ca3d6 82.3529411768%,
+																transparent 82.3529411768%, transparent 88.235294118%,
+																#d63c3c 88.235294118%, #d63c3c 100%);
+		border-bottom-left-radius: 9px;
+		border-bottom-right-radius: 9px;
+	}
+
+	.proyecto--acceso a, .contacto button { padding: 18px 24px; }
+
+	.contacto .logo {
+		width: 60px;
+		margin-top: 90px;
+	}
+}

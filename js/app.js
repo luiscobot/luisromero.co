@@ -1,78 +1,124 @@
-const TARJETA = document.getElementById('ventana');
-const CERRARICONO = document.getElementById('tarjeta--cerrar');
-const PROYECTOS = document.getElementsByClassName('proyecto');
-const boton = document.getElementById('boton');
+// usar librería JS clipboard-copy.
+const copiar = clipboardCopy;
+var botonCopiar = document.getElementById("botonCopiar");
 
-let datos = [
-	{
-		titulo : "Diseño adaptable",
-		info : "Se realizó un diseño que se adapta a las diferentes pantallas de los dispositivos, para ello se hizo uso de las media queries en CSS.",
-		foto : "photo/foto0.png",
-		enlace : "https://unluisco.github.io/Project-2-Responsive-Layout/"
-	},
-	{
-		titulo : "Galería de fotos interactiva",
-		info : "Para este diseño se utilizó una librería JS que nos permite implementar un carrusel, y este se usó para mostrar las diferentes fotografías.",
-		foto : "photo/foto1.png",
-		enlace : "https://unluisco.github.io/Project-4-Interactive-Photo-Gallery/"
-	},
-	{
-		titulo : "Reproductor de video interactivo",
-		info : "Al trabajar en el reproductor se usó una librería JS para configurar las diferentes opciones y así tener un reproductor de video de calidad profesional.",
-		foto : "photo/foto2.png",
-		enlace : "https://unluisco.github.io/Project-6-Interactive-Video-Player/"
-	},
-	{
-		titulo : "Juego de adivinanzas",
-		info : "Se construyó un juego de adivinanzas utilizando diferentes métodos y funciones en JavaScript para implementar la aleatoriedad a la hora de seleccionar la frase.",
-		foto : "photo/foto3.png",
-		enlace : "https://unluisco.github.io/Project-7-Build-a-Game-Show-App/"
-	},
-	{
-		titulo : "Panel para aplicación web",
-		info : "Para este proyecto se aplicó las técnicas de diseño avanzadas con HTML & CSS para lograr un panel que se adapta a las diferentes pantallas.",
-		foto : "photo/foto4.png",
-		enlace : "https://unluisco.github.io/Project-9-Web-App-Dashboard/"
-	},
-	{
-		titulo : "Directorio de empleados",
-		info : "Al construir el directorio se hizo uso de la solicitud de datos JSON a una API con JavaScript, y usando los eventos se logró colocar esa información en las tarjetas de cada trabajador.",
-		foto : "photo/foto5.png",
-		enlace : "https://unluisco.github.io/project-10-Employee-Directory/"
-	}
-];
+botonCopiar.addEventListener("click", () => {
+	copiar("hola@luisromero.co");
+})
 
-function agregarDatosATarjeta(objetivo) {
-	let proyecto;
+// agregar animación al entrar elemento en ventana gráfica.
+var proyectos = document.querySelectorAll(".proyectos .proyecto");
 
-	proyecto = objetivo.getAttribute('proyecto');
-	TARJETA.children[0].children[0].children[1].textContent = datos[proyecto].titulo;
-	TARJETA.children[0].children[0].children[2].textContent = datos[proyecto].info;
-	TARJETA.children[0].children[0].children[0].children[0].src = datos[proyecto].foto;
-	TARJETA.children[0].children[0].children[0].children[1].href = datos[proyecto].enlace;
+// comprobar si un elemento se encuentra visible en la ventana gráfica.
+function enVentana(elemento) {
+	var rectangulo = elemento.getBoundingClientRect();
+	var html = document.documentElement;
+
+	return (rectangulo.bottom >= 0
+			&& rectangulo.right >= 0
+			&& rectangulo.top <= html.clientHeight
+			&& rectangulo.left <= html.clientWidth);
 }
 
+function agregarClaseAElementoEnVentana(elemento, nuevaClase) {
+	if (enVentana(elemento)) {
+		elemento.classList.add(nuevaClase);
+	}
+}
+
+window.addEventListener("scroll", () => {
+	proyectos.forEach(elemento => {
+		agregarClaseAElementoEnVentana(elemento, "animar");
+	});
+});
+
+// esperar a que la ventana esté enfocada para iniciar animación.
+var elementosAnimar = [];
+var logoHeader = document.querySelector("header .logo");
+var cajaHeader = document.querySelector("header .caja-título");
+var h1Header = document.querySelector("header h1");
+var proyectosHeader = document.querySelector("header .proyectos-actuales");
+
+elementosAnimar.push(logoHeader, cajaHeader, h1Header, proyectosHeader);
+
+if (document.visibilityState === "visible") {
+	elementosAnimar.forEach(elemento => {
+		agregarClaseAElementoEnVentana(elemento, "animar");
+	});
+}
+
+window.addEventListener("visibilitychange", controladorVisibilityChange);
+
+function controladorVisibilityChange() {
+	if (document.visibilityState === "visible") {
+		elementosAnimar.forEach(elemento => {
+			agregarClaseAElementoEnVentana(elemento, "animar");
+		});
+	}
+}
+
+// implementar apertura y cierre de tarjeta.
+var tarjeta = document.querySelector(".tarjeta--base");
+var iconoCerrar = document.querySelector(".icono--cerrar");
+var listaProyectos = document.querySelector(".proyectos");
+var listaProyectosEnTarjeta = document.querySelectorAll(".tarjeta--base .proyecto");
+var proyectoSeleccionadoAnterior;
+var proyectoSeleccionado;
+
 function mostrarTarjeta() {
-	TARJETA.style.display = 'flex';
+	tarjeta.scrollTop = 0; // restablecer la posición de la tarjeta antes de cada apertura.
+	tarjeta.classList.add("mostrar-tarjeta");
+	document.body.classList.add("tarjeta--base--activa");
 }
 
 function ocultarTarjeta() {
-	TARJETA.style.display = 'none';
+	tarjeta.classList.remove("mostrar-tarjeta");
+	document.body.classList.remove("tarjeta--base--activa");
+	proyectoSeleccionadoAnterior.classList.remove("mostrar-proyecto");
 }
 
-for (let iterador of PROYECTOS) {
-	iterador.addEventListener('click', function (evento) {
-		agregarDatosATarjeta(evento.target);
-		mostrarTarjeta();
+function tarjetaClic(evento) {
+	if (evento.target !== tarjeta) return false;
+	ocultarTarjeta();
+}
+
+function windowTecla(evento) {
+	if (tarjeta.classList.contains("mostrar-tarjeta")) {
+		if (evento.key === "Escape") {
+			ocultarTarjeta();
+		}
+	}
+}
+
+function seleccionarProyecto(evento) {
+	if(evento.target.parentElement.parentElement.parentElement === null) return false;
+
+	else if(evento.target.parentElement.classList.contains("proyecto")) {
+		proyectoSeleccionado = evento.target.parentElement.dataset.proyecto;
+	}
+
+	else if(evento.target.parentElement.parentElement.classList.contains("proyecto")) {
+		proyectoSeleccionado = evento.target.parentElement.parentElement.dataset.proyecto;
+	}
+
+	else if(evento.target.parentElement.parentElement.parentElement.classList.contains("proyecto")) {
+		proyectoSeleccionado = evento.target.parentElement.parentElement.parentElement.dataset.proyecto;
+	}
+
+	mostrarTarjeta();
+	mostrarProyecto();
+}
+
+function mostrarProyecto() {
+	listaProyectosEnTarjeta.forEach( elemento => {
+		if (elemento.dataset.proyecto === proyectoSeleccionado) {
+			elemento.classList.add("mostrar-proyecto");
+			proyectoSeleccionadoAnterior = elemento;
+		}
 	});
-
-	iterador.style.background = 'url(photo/foto' + iterador.getAttribute('proyecto') + '.png) no-repeat center top';
 }
 
-CERRARICONO.addEventListener('click', ocultarTarjeta);
-
-const copy = clipboardCopy;
-
-boton.addEventListener('click', function () {
-  copy('hola@luisromero.co')
-})
+listaProyectos.addEventListener("click", seleccionarProyecto);
+iconoCerrar.addEventListener("click", ocultarTarjeta);
+tarjeta.addEventListener("click", tarjetaClic);
+window.addEventListener("keyup", windowTecla);
