@@ -59,7 +59,7 @@ function controladorVisibilityChange() {
 
 // implementar apertura y cierre de tarjeta.
 var tarjeta = document.querySelector(".tarjeta--base");
-var iconoCerrar = document.querySelector(".icono--cerrar");
+var iconoCerrar = document.querySelectorAll(".icono--cerrar");
 var listaProyectos = document.querySelector(".proyectos");
 var listaProyectosEnTarjeta = document.querySelectorAll(".tarjeta--base .proyecto");
 var proyectoSeleccionadoAnterior;
@@ -119,6 +119,8 @@ function mostrarProyecto() {
 }
 
 listaProyectos.addEventListener("click", seleccionarProyecto);
-iconoCerrar.addEventListener("click", ocultarTarjeta);
+iconoCerrar.forEach(elemento => {
+	elemento.addEventListener("click", ocultarTarjeta);
+});
 tarjeta.addEventListener("click", tarjetaClic);
 window.addEventListener("keyup", windowTecla);
