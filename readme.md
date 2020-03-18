@@ -1,4 +1,4 @@
-![logo personal.](img/cover.png)
+![logo personal.](img/github.png)
 
 # Código de mi sitio web personal. [luisromero.co](https://luisromero.co/)
 
