@@ -1,5 +1,3 @@
 ![logo personal.](img/github.png)
 
-# Código de mi sitio web personal. [luisromero.co](https://luisromero.co/)
-
-> Sitio web personal de Luis Romero
+# Sitio web personal de Luis Romero
