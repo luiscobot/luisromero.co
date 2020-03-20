@@ -57,7 +57,8 @@ h3, p {
 	========================================================================== */
 
 header,
-section:not(.tarjeta--base) { padding: 10% 8%; }
+section:not(.tarjeta--base),
+footer { padding: 10% 8%; }
 
 .logo {
 	display: block;
@@ -416,9 +417,8 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 
 .contacto button:hover { transform: scale(1.04); }
 
-.contacto .logo {
+footer .logo {
 	width: 40px;
-	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 }
