@@ -2,8 +2,10 @@
 	========================================================================== */
 
 @media (min-width: 640px) {
+
 	header,
-	section:not(.tarjeta--base) { padding: 12% 10%; }
+	section:not(.tarjeta--base),
+	footer { padding: 12% 10%; }
 
 	.proyectos .proyecto { width: 85%; }
 

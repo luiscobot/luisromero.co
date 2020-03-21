@@ -67,7 +67,8 @@
 	}
 
 	header,
-	section:not(.tarjeta--base) { padding: 10.5% 12.5%; }
+	section:not(.tarjeta--base),
+	footer { padding: 10.5% 12.5%; }
 
 	header .logo { width: 100px; }
 
