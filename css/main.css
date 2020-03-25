@@ -354,6 +354,7 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 	min-height: 100vh;
 	background-color: black;
 	color: white;
+	position: relative;
 }
 
 .contacto .carta {
@@ -416,6 +417,17 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 }
 
 .contacto button:hover { transform: scale(1.04); }
+
+/*	Pie de página.
+	========================================================================== */
+
+footer {
+	position: sticky;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	background-color: #111;
+}
 
 footer .logo {
 	width: 40px;
