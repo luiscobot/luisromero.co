@@ -1,0 +1,16 @@
+{
+	"name": "luisromero.co",
+	"version": "1.0.0",
+	"description": "sitio web personal",
+	"author": "Luis Romero <hola@luisromero.co>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/unluisco/luisromero.co.git"
+	},
+	"scripts": {
+		"dev": "browser-sync start --server --files '*'"
+	},
+	"dependencies": {
+		"browser-sync": "^2.26.7"
+	}
+}
