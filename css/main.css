@@ -60,6 +60,12 @@ header,
 section:not(.tarjeta--base),
 footer { padding: 10% 8%; }
 
+header,
+section {
+	position: relative;
+	z-index: 1;
+}
+
 .logo {
 	display: block;
 	font-size: 0;
@@ -423,7 +429,6 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 
 footer {
 	position: sticky;
-	z-index: -1;
 	bottom: 0;
 	left: 0;
 	background-color: #111;
