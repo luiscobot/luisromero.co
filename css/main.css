@@ -357,7 +357,6 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 	========================================================================== */
 
 .contacto {
-	min-height: 100vh;
 	background-color: black;
 	color: white;
 	position: relative;
