@@ -8,7 +8,7 @@
 		"url": "git+https://github.com/unluisco/luisromero.co.git"
 	},
 	"scripts": {
-		"dev": "browser-sync start --server --files '*'"
+		"dev": "browser-sync --watch"
 	},
 	"dependencies": {
 		"browser-sync": "^2.26.7"
