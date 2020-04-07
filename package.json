@@ -5,12 +5,12 @@
 	"author": "Luis Romero <hola@luisromero.co>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/unluisco/luisromero.co.git"
+		"url": "git+https://github.com/luiscobits/luisromero.co.git"
 	},
 	"scripts": {
 		"dev": "browser-sync --watch"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"browser-sync": "^2.26.7"
 	}
 }
