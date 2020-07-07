@@ -1,3 +1,15 @@
+// inicializar sitio web luego de precargar contenido.
+function inicializar() {
+	let precarga = document.querySelector('.precarga');
+	precarga.classList.add('inicializar');
+	setTimeout(() => {
+		precarga.parentNode.removeChild(precarga);
+	}, 3300);
+	window.removeEventListener('load', inicializar);
+}
+
+window.addEventListener('load', inicializar);
+
 // usar librería JS clipboard-copy.
 const copiar = clipboardCopy;
 var botonCopiar = document.getElementById("botonCopiar");

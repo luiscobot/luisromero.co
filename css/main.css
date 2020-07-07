@@ -56,12 +56,77 @@ h3, p {
 /*	Secciones.
 	========================================================================== */
 
+.precarga {
+	position: fixed;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+}
+
+.precarga svg {
+	width: 60px;
+	height: 60px;
+	opacity: 1;
+}
+
+.precarga svg path:nth-child(1),
+.precarga svg path:nth-child(3) {
+	stroke-width: 12px;
+	stroke: #ff4a00;
+}
+
+.precarga svg path:nth-child(1) {
+	stroke-dasharray: 2730.238037109375;
+	stroke-dashoffset: -2730.238037109375;
+	fill: transparent;
+}
+
+.precarga svg path:nth-child(2) {
+	fill: transparent;
+}
+
+.precarga svg path:nth-child(3) {
+	stroke-dasharray: 1748.72216796875;
+	stroke-dashoffset: -1748.72216796875;
+	fill: transparent;
+}
+
+.inicializar {
+	opacity: 0;
+	transition: opacity 1.2s ease-in 2.1s;
+}
+
+.precarga.inicializar svg path {
+	transition: stroke-dashoffset .9s linear, fill .6s ease-in .9s;
+}
+
+.precarga.inicializar svg {
+	opacity: 0;
+	transition: opacity .3s ease-in 1.8s;
+}
+
+.precarga.inicializar svg path:nth-child(1),
+.precarga.inicializar svg path:nth-child(3) {
+	stroke-dashoffset: 0;
+	fill: #ff4a00;
+}
+
+.precarga.inicializar svg path:nth-child(2) {
+	fill: #b93600;
+}
+
 header,
-section:not(.tarjeta--base),
+.proyectos,
+.contacto,
 footer { padding: 10% 8%; }
 
 header,
-section {
+.proyectos,
+.contacto {
 	position: relative;
 	z-index: 1;
 }

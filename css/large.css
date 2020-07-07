@@ -18,7 +18,8 @@
 		margin-top: 35px;
 	}
 
-	section:not(.tarjeta--base) { padding: 8% 12.5%; }
+	.proyectos,
+	.contacto { padding: 8% 12.5%; }
 
 	.proyectos {
 		display: flex;

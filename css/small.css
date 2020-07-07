@@ -4,7 +4,8 @@
 @media (min-width: 640px) {
 
 	header,
-	section:not(.tarjeta--base),
+	.proyectos,
+	.contacto,
 	footer { padding: 12% 10%; }
 
 	.proyectos .proyecto { width: 85%; }
