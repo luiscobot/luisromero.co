@@ -12,19 +12,19 @@ window.addEventListener('load', inicializar);
 
 // usar librería JS clipboard-copy.
 const copiar = clipboardCopy;
-var botonCopiar = document.getElementById("botonCopiar");
+let botonCopiar = document.getElementById("botonCopiar");
 
 botonCopiar.addEventListener("click", () => {
 	copiar("hola@luisromero.co");
 })
 
 // agregar animación al entrar elemento en ventana gráfica.
-var proyectos = document.querySelectorAll(".proyectos .proyecto");
+let proyectos = document.querySelectorAll(".proyectos .proyecto");
 
 // comprobar si un elemento se encuentra visible en la ventana gráfica.
 function enVentana(elemento) {
-	var rectangulo = elemento.getBoundingClientRect();
-	var html = document.documentElement;
+	let rectangulo = elemento.getBoundingClientRect();
+	let html = document.documentElement;
 
 	return (rectangulo.bottom >= 0
 			&& rectangulo.right >= 0
@@ -45,11 +45,11 @@ window.addEventListener("scroll", () => {
 });
 
 // esperar a que la ventana esté enfocada para iniciar animación.
-var elementosAnimar = [];
-var logoHeader = document.querySelector("header .logo");
-var cajaHeader = document.querySelector("header .caja-título");
-var h1Header = document.querySelector("header h1");
-var proyectosHeader = document.querySelector("header .proyectos-actuales");
+let elementosAnimar = [];
+let logoHeader = document.querySelector("header .logo");
+let cajaHeader = document.querySelector("header .caja-título");
+let h1Header = document.querySelector("header h1");
+let proyectosHeader = document.querySelector("header .proyectos-actuales");
 
 elementosAnimar.push(logoHeader, cajaHeader, h1Header, proyectosHeader);
 
@@ -70,12 +70,12 @@ function controladorVisibilityChange() {
 }
 
 // implementar apertura y cierre de tarjeta.
-var tarjeta = document.querySelector(".tarjeta--base");
-var iconoCerrar = document.querySelectorAll(".icono--cerrar");
-var listaProyectos = document.querySelector(".proyectos");
-var listaProyectosEnTarjeta = document.querySelectorAll(".tarjeta--base .proyecto");
-var proyectoSeleccionadoAnterior;
-var proyectoSeleccionado;
+let tarjeta = document.querySelector(".tarjeta--base");
+let iconoCerrar = document.querySelectorAll(".icono--cerrar");
+let listaProyectos = document.querySelector(".proyectos");
+let listaProyectosEnTarjeta = document.querySelectorAll(".tarjeta--base .proyecto");
+let proyectoSeleccionadoAnterior;
+let proyectoSeleccionado;
 
 function mostrarTarjeta() {
 	tarjeta.scrollTop = 0; // restablecer la posición de la tarjeta antes de cada apertura.
