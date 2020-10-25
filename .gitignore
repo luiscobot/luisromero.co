@@ -1,2 +1,5 @@
-# archivos Mac
+# Mac
 .DS_Store
+
+# Nova
+.nova
