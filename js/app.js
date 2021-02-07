@@ -12,14 +12,14 @@ window.addEventListener('load', inicializar);
 
 // usar librería JS clipboard-copy.
 const copiar = clipboardCopy;
-let botonCopiar = document.getElementById("botonCopiar");
+let botonCopiar = document.getElementById('botonCopiar');
 
-botonCopiar.addEventListener("click", () => {
-	copiar("hola@luisromero.co");
-})
+botonCopiar.addEventListener('click', () => {
+	copiar('hola@luisromero.co');
+});
 
 // agregar animación al entrar elemento en ventana gráfica.
-let proyectos = document.querySelectorAll(".proyectos .proyecto");
+let proyectos = document.querySelectorAll('.proyectos .proyecto');
 
 // comprobar si un elemento se encuentra visible en la ventana gráfica.
 function enVentana(elemento) {
@@ -38,55 +38,55 @@ function agregarClaseAElementoEnVentana(elemento, nuevaClase) {
 	}
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
 	proyectos.forEach(elemento => {
-		agregarClaseAElementoEnVentana(elemento, "animar");
+		agregarClaseAElementoEnVentana(elemento, 'animar');
 	});
 });
 
 // esperar a que la ventana esté enfocada para iniciar animación.
 let elementosAnimar = [];
-let logoHeader = document.querySelector("header .logo");
-let cajaHeader = document.querySelector("header .caja-título");
-let h1Header = document.querySelector("header h1");
-let proyectosHeader = document.querySelector("header .proyectos-actuales");
+let logoHeader = document.querySelector('header .logo');
+let cajaHeader = document.querySelector('header .caja-título');
+let h1Header = document.querySelector('header h1');
+let proyectosHeader = document.querySelector('header .proyectos-actuales');
 
 elementosAnimar.push(logoHeader, cajaHeader, h1Header, proyectosHeader);
 
-if (document.visibilityState === "visible") {
+if (document.visibilityState === 'visible') {
 	elementosAnimar.forEach(elemento => {
-		agregarClaseAElementoEnVentana(elemento, "animar");
+		agregarClaseAElementoEnVentana(elemento, 'animar');
 	});
 }
 
-window.addEventListener("visibilitychange", controladorVisibilityChange);
+window.addEventListener('visibilitychange', controladorVisibilityChange);
 
 function controladorVisibilityChange() {
-	if (document.visibilityState === "visible") {
+	if (document.visibilityState === 'visible') {
 		elementosAnimar.forEach(elemento => {
-			agregarClaseAElementoEnVentana(elemento, "animar");
+			agregarClaseAElementoEnVentana(elemento, 'animar');
 		});
 	}
 }
 
 // implementar apertura y cierre de tarjeta.
-let tarjeta = document.querySelector(".tarjeta--base");
-let iconoCerrar = document.querySelectorAll(".icono--cerrar");
-let listaProyectos = document.querySelector(".proyectos");
-let listaProyectosEnTarjeta = document.querySelectorAll(".tarjeta--base .proyecto");
+let tarjeta = document.querySelector('.tarjeta--base');
+let iconoCerrar = document.querySelectorAll('.icono--cerrar');
+let listaProyectos = document.querySelector('.proyectos');
+let listaProyectosEnTarjeta = document.querySelectorAll('.tarjeta--base .proyecto');
 let proyectoSeleccionadoAnterior;
 let proyectoSeleccionado;
 
 function mostrarTarjeta() {
 	tarjeta.scrollTop = 0; // restablecer la posición de la tarjeta antes de cada apertura.
-	tarjeta.classList.add("mostrar-tarjeta");
-	document.body.classList.add("tarjeta--base--activa");
+	tarjeta.classList.add('mostrar-tarjeta');
+	document.body.classList.add('tarjeta--base--activa');
 }
 
 function ocultarTarjeta() {
-	tarjeta.classList.remove("mostrar-tarjeta");
-	document.body.classList.remove("tarjeta--base--activa");
-	proyectoSeleccionadoAnterior.classList.remove("mostrar-proyecto");
+	tarjeta.classList.remove('mostrar-tarjeta');
+	document.body.classList.remove('tarjeta--base--activa');
+	proyectoSeleccionadoAnterior.classList.remove('mostrar-proyecto');
 }
 
 function tarjetaClic(evento) {
@@ -95,8 +95,8 @@ function tarjetaClic(evento) {
 }
 
 function windowTecla(evento) {
-	if (tarjeta.classList.contains("mostrar-tarjeta")) {
-		if (evento.key === "Escape") {
+	if (tarjeta.classList.contains('mostrar-tarjeta')) {
+		if (evento.key === 'Escape') {
 			ocultarTarjeta();
 		}
 	}
@@ -105,15 +105,15 @@ function windowTecla(evento) {
 function seleccionarProyecto(evento) {
 	if(evento.target.parentElement.parentElement.parentElement === null) return false;
 
-	else if(evento.target.parentElement.classList.contains("proyecto")) {
+	else if(evento.target.parentElement.classList.contains('proyecto')) {
 		proyectoSeleccionado = evento.target.parentElement.dataset.proyecto;
 	}
 
-	else if(evento.target.parentElement.parentElement.classList.contains("proyecto")) {
+	else if(evento.target.parentElement.parentElement.classList.contains('proyecto')) {
 		proyectoSeleccionado = evento.target.parentElement.parentElement.dataset.proyecto;
 	}
 
-	else if(evento.target.parentElement.parentElement.parentElement.classList.contains("proyecto")) {
+	else if(evento.target.parentElement.parentElement.parentElement.classList.contains('proyecto')) {
 		proyectoSeleccionado = evento.target.parentElement.parentElement.parentElement.dataset.proyecto;
 	}
 
@@ -124,15 +124,15 @@ function seleccionarProyecto(evento) {
 function mostrarProyecto() {
 	listaProyectosEnTarjeta.forEach( elemento => {
 		if (elemento.dataset.proyecto === proyectoSeleccionado) {
-			elemento.classList.add("mostrar-proyecto");
+			elemento.classList.add('mostrar-proyecto');
 			proyectoSeleccionadoAnterior = elemento;
 		}
 	});
 }
 
-listaProyectos.addEventListener("click", seleccionarProyecto);
+listaProyectos.addEventListener('click', seleccionarProyecto);
 iconoCerrar.forEach(elemento => {
-	elemento.addEventListener("click", ocultarTarjeta);
+	elemento.addEventListener('click', ocultarTarjeta);
 });
-tarjeta.addEventListener("click", tarjetaClic);
-window.addEventListener("keyup", windowTecla);
+tarjeta.addEventListener('click', tarjetaClic);
+window.addEventListener('keyup', windowTecla);
