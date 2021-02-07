@@ -1,4 +1,4 @@
-// inicializar sitio web luego de precargar contenido.
+// Inicializar sitio web luego de precargar contenido.
 function inicializar() {
 	let precarga = document.querySelector('.precarga');
 	precarga.classList.add('inicializar');
@@ -10,7 +10,7 @@ function inicializar() {
 
 window.addEventListener('load', inicializar);
 
-// usar librería JS clipboard-copy.
+// Usar librería JS clipboard-copy.
 const copiar = clipboardCopy;
 let botonCopiar = document.getElementById('botonCopiar');
 
@@ -18,10 +18,10 @@ botonCopiar.addEventListener('click', () => {
 	copiar('hola@luisromero.co');
 });
 
-// agregar animación al entrar elemento en ventana gráfica.
+// Agregar animación al entrar elemento en ventana gráfica.
 let proyectos = document.querySelectorAll('.proyectos .proyecto');
 
-// comprobar si un elemento se encuentra visible en la ventana gráfica.
+// Comprobar si un elemento se encuentra visible en la ventana gráfica.
 function enVentana(elemento) {
 	let rectangulo = elemento.getBoundingClientRect();
 	let html = document.documentElement;
@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
 	});
 });
 
-// esperar a que la ventana esté enfocada para iniciar animación.
+// Esperar a que la ventana esté enfocada para iniciar animación.
 let elementosAnimar = [];
 let logoHeader = document.querySelector('header .logo');
 let cajaHeader = document.querySelector('header .caja-título');
@@ -69,7 +69,7 @@ function controladorVisibilityChange() {
 	}
 }
 
-// implementar apertura y cierre de tarjeta.
+// Implementar apertura y cierre de tarjeta.
 let tarjeta = document.querySelector('.tarjeta--base');
 let iconoCerrar = document.querySelectorAll('.icono--cerrar');
 let listaProyectos = document.querySelector('.proyectos');
