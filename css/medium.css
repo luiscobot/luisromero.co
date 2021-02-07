@@ -1,5 +1,5 @@
-/* Consulta de medios (Más grande que phablet).
-	 ========================================================================== */
+/*	Consulta de medios (Más grande que phablet).
+	========================================================================= */
 
 @media (min-width: 768px) {
 
@@ -36,8 +36,8 @@
 	.carta--info { padding: 36px; }
 }
 
-/* Consulta de medios (Más grande que tablet).
-	 ========================================================================== */
+/*	Consulta de medios (Más grande que tablet).
+	========================================================================= */
 
 @media (min-width: 46.875rem) { /* 750px / 16px. */
 
@@ -122,17 +122,17 @@
 	.carta::after {
 		height: 9px;
 		background: linear-gradient(135deg,
-																#3ca3d6 0%, #3ca3d6 11.7647058824%,
-																transparent 11.7647058824%, transparent 17.6470588236%,
-																#d63c3c 17.6470588236%, #d63c3c 29.411764706%,
-																transparent 29.411764706%, transparent 35.2941176472%,
-																#3ca3d6 35.2941176472%, #3ca3d6 47.0588235296%,
-																transparent 47.0588235296%, transparent 52.9411764708%,
-																#d63c3c 52.9411764708%, #d63c3c 64.7058823532%,
-																transparent 64.7058823532%, transparent 70.5882352944%,
-																#3ca3d6 70.5882352944%, #3ca3d6 82.3529411768%,
-																transparent 82.3529411768%, transparent 88.235294118%,
-																#d63c3c 88.235294118%, #d63c3c 100%);
+									#3ca3d6 0%, #3ca3d6 11.7647058824%,
+									transparent 11.7647058824%, transparent 17.6470588236%,
+									#d63c3c 17.6470588236%, #d63c3c 29.411764706%,
+									transparent 29.411764706%, transparent 35.2941176472%,
+									#3ca3d6 35.2941176472%, #3ca3d6 47.0588235296%,
+									transparent 47.0588235296%, transparent 52.9411764708%,
+									#d63c3c 52.9411764708%, #d63c3c 64.7058823532%,
+									transparent 64.7058823532%, transparent 70.5882352944%,
+									#3ca3d6 70.5882352944%, #3ca3d6 82.3529411768%,
+									transparent 82.3529411768%, transparent 88.235294118%,
+									#d63c3c 88.235294118%, #d63c3c 100%);
 		border-bottom-left-radius: 9px;
 		border-bottom-right-radius: 9px;
 	}
