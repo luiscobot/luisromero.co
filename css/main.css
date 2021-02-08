@@ -1,5 +1,5 @@
 /*	Fuente tipográfica.
-	========================================================================== */
+	========================================================================= */
 
 @font-face {
 	font-family: 'geomanist-bold';
@@ -8,7 +8,7 @@
 }
 
 /*	Base.
-	========================================================================== */
+	========================================================================= */
 
 * { margin: 0; padding: 0; }
 
@@ -17,7 +17,7 @@ html { font-size: 62.5%; } /* establecer tamaño de fuente base a 10px */
 body { background-color: black; }
 
 /*	Selección de texto.
-	========================================================================== */
+	========================================================================= */
 
 ::selection { background-color: #ff4a00; }
 
@@ -27,7 +27,7 @@ body { background-color: black; }
 .contacto .carta .texto--resaltar::selection { color: white; }
 
 /*	Tipografía.
-	========================================================================== */
+	========================================================================= */
 
 h1, h2, h3, p, li, a, button, footer span { font-family: 'geomanist-bold', sans-serif; }
 
@@ -54,7 +54,7 @@ h3, p {
 }
 
 /*	Secciones.
-	========================================================================== */
+	========================================================================= */
 
 .precarga {
 	position: fixed;
@@ -158,7 +158,7 @@ h2 {
 }
 
 /*	Encabezado.
-	========================================================================== */
+	========================================================================= */
 
 header {
 	display: flex;
@@ -232,7 +232,7 @@ ul li:last-of-type { margin-top: 6px; }
 header .proyectos-actuales.animar { animation: 'revelar-abajoArriba' .6s 1.8s forwards; }
 
 /*	Proyectos.
-	========================================================================== */
+	========================================================================= */
 
 .proyectos {
 	background-color: white;
@@ -310,7 +310,7 @@ header .proyectos-actuales.animar { animation: 'revelar-abajoArriba' .6s 1.8s fo
 .proyectos .proyecto--portada img { border-radius: 12px; }
 
 /*	Tarjeta.
-	========================================================================== */
+	========================================================================= */
 
 .tarjeta--base {
 	display: block;
@@ -419,7 +419,7 @@ header .proyectos-actuales.animar { animation: 'revelar-abajoArriba' .6s 1.8s fo
 body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de movimiento. */
 
 /*	Contactos.
-	========================================================================== */
+	========================================================================= */
 
 .contacto {
 	background-color: black;
@@ -489,7 +489,7 @@ body.tarjeta--base--activa { overflow: hidden; } /* desactivar la posibilidad de
 .contacto button:hover { transform: scale(1.04); }
 
 /*	Pie de página.
-	========================================================================== */
+	========================================================================= */
 
 footer {
 	position: sticky;

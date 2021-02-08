@@ -1,5 +1,5 @@
-/* Consulta de medios (Más grande que escritorio).
-	 ========================================================================== */
+/*	Consulta de medios (Más grande que escritorio).
+	========================================================================= */
 
 @media (min-width: 1024px) {
 
@@ -82,8 +82,8 @@
 	}
 }
 
-/* Consulta de medios (Más grande que escritorio HD).
-	 ========================================================================== */
+/*	Consulta de medios (Más grande que escritorio HD).
+	========================================================================= */
 
 @media (min-width: 1280px) {
 

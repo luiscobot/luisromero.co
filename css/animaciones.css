@@ -1,5 +1,5 @@
 /*	Animaciones.
-	========================================================================== */
+	========================================================================= */
 
 @keyframes revelar-izquierdaDerecha {
 	0% {
@@ -60,7 +60,7 @@
 	}
 
 	to {
-	opacity: 1;
-	transform: translateY(0);
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
