@@ -10,6 +10,9 @@ function inicializar() {
 
 window.addEventListener('load', inicializar);
 
+// Mostrar año actual en pie de página.
+document.getElementById('año-actual').textContent = new Date().getFullYear();
+
 // Usar librería JS clipboard-copy.
 const copiar = clipboardCopy;
 let botonCopiar = document.getElementById('botonCopiar');
