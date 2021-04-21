@@ -1,623 +1,622 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<!-- Metadato específico para móviles. -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<!-- Metadato específico para móviles. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Luis Romero &middot; Constructor Digital.</title>
+	<title>Luis Romero &middot; Constructor Digital.</title>
 
-		<link rel="icon" href="./favicon.svg">
+	<link rel="icon" href="./favicon.svg">
 
-		<!-- Biblioteca CSS para restablecer estilos de navegador. -->
-		<link rel="stylesheet" href="https://unpkg.com/modern-normalize">
-		<link rel="stylesheet" href="css/master.css">
-	</head>
+	<!-- Biblioteca CSS para restablecer estilos de navegador. -->
+	<link rel="stylesheet" href="https://unpkg.com/modern-normalize">
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+	<section class="precarga">
+		<svg viewBox="0 0 1080 1080">
+			<g fill="none" fill-rule="evenodd">
+				<path d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
+				<path d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
+				<path d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
+			</g>
+		</svg>
+	</section>
 
-	<body>
-		<section class="precarga">
+	<header>
+		<a class="logo" href="./">
 			<svg viewBox="0 0 1080 1080">
 				<g fill="none" fill-rule="evenodd">
-					<path d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
-					<path d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
-					<path d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
+					<path fill="#FF4A00" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
+					<path fill="#B93600" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
+					<path fill="#FF4A00" d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
 				</g>
 			</svg>
-		</section>
-		
-		<header>
-			<a class="logo" href="./">
-				<svg viewBox="0 0 1080 1080">
-					<g fill="none" fill-rule="evenodd">
-						<path fill="#FF4A00" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
-						<path fill="#B93600" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
-						<path fill="#FF4A00" d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
-					</g>
-				</svg>
-			</a>
+		</a>
 
-			<div class="caja-título"><h1>Construyo herramientas digitales que aportan <span class="texto--resaltar">beneficios reales</span> a los emprendedores<span class="texto--resaltar">.</span></h1></div>
+		<div class="caja-título"><h1>Construyo herramientas digitales que aportan <span class="texto--resaltar">beneficios reales</span> a los emprendedores<span class="texto--resaltar">.</span></h1></div>
 
-			<div class="proyectos-actuales">
-				<p class="párrafo--pequeño">Actualmente trabajo en:</p>
+		<div class="proyectos-actuales">
+			<p class="párrafo--pequeño">Actualmente trabajo en:</p>
 
-				<ul>
-					<li class="amigos_de_luis">
-						<svg viewBox="0 0 8 12">
-							<polygon points="5.714 4.8 5.714 0 2.92 3.522 0 7.2 2.286 7.2 2.286 12 8 4.8"/>
-						</svg>
-						Un juego de preguntas para reuniones sociales</li>
+			<ul>
+				<li class="amigos_de_luis">
+					<svg viewBox="0 0 8 12">
+						<polygon points="5.714 4.8 5.714 0 2.92 3.522 0 7.2 2.286 7.2 2.286 12 8 4.8"/>
+					</svg>
+					Un juego de preguntas para reuniones sociales</li>
 
-					<li class="amigos_de_luis">
-						<svg viewBox="0 0 8 12">
-							<polygon points="5.714 4.8 5.714 0 2.92 3.522 0 7.2 2.286 7.2 2.286 12 8 4.8"/>
-						</svg>
-						Una aplicación web para conocer curiosidades</li>
-				</ul>
+				<li class="amigos_de_luis">
+					<svg viewBox="0 0 8 12">
+						<polygon points="5.714 4.8 5.714 0 2.92 3.522 0 7.2 2.286 7.2 2.286 12 8 4.8"/>
+					</svg>
+					Una aplicación web para conocer curiosidades</li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="proyectos">
+		<h2>
+			<svg class="icono--subtítulo" viewBox="0 0 384 512">
+				<path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path>
+			</svg>
+			Proyectos<br> que he realizado<span class="texto--resaltar">.</span>
+		</h2>
+
+		<p class="párrafo">He estado construyendo sitios web, aquí verás algunos de ellos.</p>
+
+		<a class="proyecto" data-proyecto="01">
+			<div class="proyecto--portada">
+				<h3>Aplicación de entretenimiento</h3>
+				<img src="img/img01.png" alt="miniatura del proyecto.">
 			</div>
-		</header>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
 
-		<section class="proyectos">
-			<h2>
-				<svg class="icono--subtítulo" viewBox="0 0 384 512">
-					<path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path>
-				</svg>
-				Proyectos<br> que he realizado<span class="texto--resaltar">.</span>
-			</h2>
+		<a class="proyecto" data-proyecto="02">
+			<div class="proyecto--portada">
+				<h3>Página de perfil personal</h3>
+				<img src="img/img02.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
 
-			<p class="párrafo">He estado construyendo sitios web, aquí verás algunos de ellos.</p>
+		<a class="proyecto" data-proyecto="03">
+			<div class="proyecto--portada">
+				<h3>Diseño adaptable</h3>
+				<img src="img/img03.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
 
-			<a class="proyecto" data-proyecto="01">
+		<a class="proyecto" data-proyecto="04">
+			<div class="proyecto--portada">
+				<h3>Formulario de registro en línea</h3>
+				<img src="img/img04.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="05">
+			<div class="proyecto--portada">
+				<h3>Galería de fotos interactiva</h3>
+				<img src="img/img05.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="06">
+			<div class="proyecto--portada">
+				<h3>Guía de estilo web</h3>
+				<img src="img/img06.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="07">
+			<div class="proyecto--portada">
+				<h3>Reproductor de video interactivo</h3>
+				<img src="img/img07.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="08">
+			<div class="proyecto--portada">
+				<h3>Juego de adivinanza de palabras</h3>
+				<img src="img/img08.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="09">
+			<div class="proyecto--portada">
+				<h3>Animaciones SVG</h3>
+				<img src="img/img09.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="10">
+			<div class="proyecto--portada">
+				<h3>Panel de aplicación web</h3>
+				<img src="img/img10.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="11">
+			<div class="proyecto--portada">
+				<h3>Directorio de empleados</h3>
+				<img src="img/img11.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="proyecto" data-proyecto="12">
+			<div class="proyecto--portada">
+				<h3>Portafolio profesional</h3>
+				<img src="img/img12.png" alt="miniatura del proyecto.">
+			</div>
+			<svg viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</a>
+	</section>
+
+	<section class="contacto">
+		<h2>
+			<svg class="icono--subtítulo" viewBox="0 0 576 512">
+				<path d="M416 224V64c0-35.3-28.7-64-64-64H64C28.7 0 0 28.7 0 64v160c0 35.3 28.7 64 64 64v54.2c0 8 9.1 12.6 15.5 7.8l82.8-62.1H352c35.3.1 64-28.6 64-63.9zm96-64h-64v64c0 52.9-43.1 96-96 96H192v64c0 35.3 28.7 64 64 64h125.7l82.8 62.1c6.4 4.8 15.5.2 15.5-7.8V448h32c35.3 0 64-28.7 64-64V224c0-35.3-28.7-64-64-64z" class=""></path>
+			</svg>
+			Podemos<br> trabajar juntos<span class="texto--resaltar">.</span>
+		</h2>
+
+		<div class="carta">
+			<div class="carta--info">
+				<p>¿Tienes en mente un proyecto que quieres construir?</p>
+
+				<p>Escríbeme a <span class="texto--resaltar">hola</span>@<span class="texto--resaltar">luisromero</span>.<span class="texto--resaltar">co</span><br> y cuéntame sobre ello.</p>
+
+				<button id="botonCopiar">copiar correo electrónico</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="tarjeta--base">
+		<div class="proyecto" data-proyecto="01">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Aplicación de entretenimiento</h3>
 					<img src="img/img01.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://flipcoin.today/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Construí esta aplicación interactiva para poner en práctica mis habilidades con HTML, CSS y JavaScript.</p>
 
-			<a class="proyecto" data-proyecto="02">
+					<p class="párrafo--pequeño">Implementé un sistema de aleatoriedad para la moneda, y añadí animaciones CSS para darle un diseño más realiste</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="02">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Página de perfil personal</h3>
 					<img src="img/img02.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-1-Personal-Profile-Page/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Practiqué HTML y CSS, mientras reconstruía una página web para que coincidiera con mi propia presentación y visión personal.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
 
-			<a class="proyecto" data-proyecto="03">
+		<div class="proyecto" data-proyecto="03">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Diseño adaptable</h3>
 					<img src="img/img03.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-2-Responsive-Layout/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Dominé el diseño web adaptable mediante la creación de una página de inicio con gráficos, enlaces y navegación que se ajusta al tamaño del dispositivo del usuario.</p>
 
-			<a class="proyecto" data-proyecto="04">
+					<p class="párrafo--pequeño">En otras palabras, cronstruí una página que se ve diferente (y bien) en dispositivos portátiles, tabletas, computadoras portátiles y computadoras de escritorio.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="04">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Formulario de registro en línea</h3>
 					<img src="img/img04.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-3-Online-Registration-Form/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Cree un formulario de suscripción al boletín para una revista en línea utilizando campos de texto, casillas de verificación y botones.</p>
 
-			<a class="proyecto" data-proyecto="05">
+					<p class="párrafo--pequeño">El formulario también funciona bien en teléfonos móviles.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="05">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Galería de fotos interactiva</h3>
 					<img src="img/img05.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-4-Interactive-Photo-Gallery/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Las galerías de imágenes interactivas son una característica común de muchos sitios web, desde sitios de fotos hasta aplicaciones de comercio electrónico.</p>
 
-			<a class="proyecto" data-proyecto="06">
+					<p class="párrafo--pequeño">Usé HTML, CSS y el popular lenguaje de programación JavaScript para crear una galería de fotos interactiva y con capacidad de búsqueda.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="06">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Guía de estilo web</h3>
 					<img src="img/img06.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-5-Build-a-Web-Style-Guide/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Una guía de estilo es un documento que define los estilos y principios de diseño aceptados para una empresa.</p>
 
-			<a class="proyecto" data-proyecto="07">
+					<p class="párrafo--pequeño">Se usan comúnmente en empresas para ayudar a crear diseños consistentes para diseño web y móvil.</p>
+
+					<p class="párrafo--pequeño"> Usé Sass y CSS para crear mi propia guía de estilo.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="07">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Reproductor de video interactivo</h3>
 					<img src="img/img07.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-6-Interactive-Video-Player/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Implementé un reproductor de video interactivo usando una biblioteca de terceros.</p>
 
-			<a class="proyecto" data-proyecto="08">
+					<p class="párrafo--pequeño">Además construí una herramienta para añadirle interactividad al reproductor por medio de los subtítulos de apoyo.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="08">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Juego de adivinanza de palabras</h3>
 					<img src="img/img08.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-7-Build-a-Game-Show-App/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Usé JavaScript para crear un juego interactivo de adivinanzas basado en la web en el que los jugadores hacen clic en las letras de un teclado en pantalla para intentar adivinar una frase aleatoria.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
 
-			<a class="proyecto" data-proyecto="09">
+		<div class="proyecto" data-proyecto="09">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Animaciones SVG</h3>
 					<img src="img/img09.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-8-SVG-Animations/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Aprendí a utilizar transformaciones y animaciones en CSS con este proyecto, ahora podré mejorar mis diseños agregando una nueva dimensión a los sitios web tradicionales.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
 
-			<a class="proyecto" data-proyecto="10">
+		<div class="proyecto" data-proyecto="10">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Panel de aplicación web</h3>
 					<img src="img/img10.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/Project-9-Web-App-Dashboard/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Construí un panel interactivo para una aplicación web utilizando técnicas web avanzadas que incluyen gráficos SVG y programación JavaScript.</p>
 
-			<a class="proyecto" data-proyecto="11">
+					<p class="párrafo--pequeño">El proyecto implicaba la creación de tablas, cuadros, gráficos y otros componentes de la interfaz de usuario de una manera que promueva la interactividad y la usabilidad.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="11">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Directorio de empleados</h3>
 					<img src="img/img11.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
+				<div class="proyecto--acceso">
+					<a href="https://luiscobits.github.io/project-10-Employee-Directory/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">Muchos sitios (Twitter, Facebook, IMDB y Wikipedia, por nombrar algunos) ofrecen una gran cantidad de datos a los que podemos acceder y mostrar en nuestras propias páginas web.</p>
 
-			<a class="proyecto" data-proyecto="12">
+					<p class="párrafo--pequeño">Con JavaScript, construí un directorio de empleados que se comunica con una API (interfaz de programación de aplicaciones) de terceros.</p>
+				</div>
+			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="proyecto" data-proyecto="12">
+			<div class="proyecto--presentación">
 				<div class="proyecto--portada">
 					<h3>Portafolio profesional</h3>
 					<img src="img/img12.png" alt="miniatura del proyecto.">
 				</div>
-				<svg viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</a>
-		</section>
-
-		<section class="contacto">
-			<h2>
-				<svg class="icono--subtítulo" viewBox="0 0 576 512">
-					<path d="M416 224V64c0-35.3-28.7-64-64-64H64C28.7 0 0 28.7 0 64v160c0 35.3 28.7 64 64 64v54.2c0 8 9.1 12.6 15.5 7.8l82.8-62.1H352c35.3.1 64-28.6 64-63.9zm96-64h-64v64c0 52.9-43.1 96-96 96H192v64c0 35.3 28.7 64 64 64h125.7l82.8 62.1c6.4 4.8 15.5.2 15.5-7.8V448h32c35.3 0 64-28.7 64-64V224c0-35.3-28.7-64-64-64z" class=""></path>
-				</svg>
-				Podemos<br> trabajar juntos<span class="texto--resaltar">.</span>
-			</h2>
-
-			<div class="carta">
-				<div class="carta--info">
-					<p>¿Tienes en mente un proyecto que quieres construir?</p>
-
-					<p>Escríbeme a <span class="texto--resaltar">hola</span>@<span class="texto--resaltar">luisromero</span>.<span class="texto--resaltar">co</span><br> y cuéntame sobre ello.</p>
-
-					<button id="botonCopiar">copiar correo electrónico</button>
+				<div class="proyecto--acceso">
+					<a href="https://luisromero.co/">
+						visitar proyecto
+						<svg viewBox="0 0 448 512">
+							<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
+						</svg>
+					</a>
 				</div>
 			</div>
-		</section>
+			<div class="proyecto--info">
+				<div class="caja">
+					<p class="párrafo--pequeño">En este proyecto, construí un portafolio en línea para mostrar el trabajo que ha construido como parte del programa educativo Front End Web Development Techdegree de Treehouse.</p>
 
-		<section class="tarjeta--base">
-			<div class="proyecto" data-proyecto="01">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Aplicación de entretenimiento</h3>
-						<img src="img/img01.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://flipcoin.today/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Construí esta aplicación interactiva para poner en práctica mis habilidades con HTML, CSS y JavaScript.</p>
+					<p class="párrafo--pequeño">Reúní todas mis habilidades con HTML, CSS y JavaScript para construir una portafolio en línea divertido e interactivo.</p>
 
-						<p class="párrafo--pequeño">Implementé un sistema de aleatoriedad para la moneda, y añadí animaciones CSS para darle un diseño más realiste</p>
-					</div>
+					<p class="párrafo--pequeño"> Alojé el sitio en la web utilizando una empresa de alojamiento web (zeit.co).</p>
 				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
 			</div>
+			<svg class="icono--cerrar" viewBox="0 0 24 24">
+				<g>
+					<rect width="24" height="24" fill-opacity=".3" rx="12"/>
+					<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
+				</g>
+			</svg>
+		</div>
+	</section>
 
-			<div class="proyecto" data-proyecto="02">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Página de perfil personal</h3>
-						<img src="img/img02.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-1-Personal-Profile-Page/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Practiqué HTML y CSS, mientras reconstruía una página web para que coincidiera con mi propia presentación y visión personal.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
+	<footer>
+		<a class="logo" href="./">
+			<svg viewBox="0 0 1080 1080">
+				<g fill="none" fill-rule="evenodd">
+					<path fill="#3C3C3C" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
+					<path fill="#2D2D2D" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
+					<path fill="#3C3C3C" d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
+				</g>
+			</svg>
+		</a>
+		<span>Luis Romero · <span id="año-actual">####</span></span>
+	</footer>
 
-			<div class="proyecto" data-proyecto="03">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Diseño adaptable</h3>
-						<img src="img/img03.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-2-Responsive-Layout/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Dominé el diseño web adaptable mediante la creación de una página de inicio con gráficos, enlaces y navegación que se ajusta al tamaño del dispositivo del usuario.</p>
-
-						<p class="párrafo--pequeño">En otras palabras, cronstruí una página que se ve diferente (y bien) en dispositivos portátiles, tabletas, computadoras portátiles y computadoras de escritorio.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="04">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Formulario de registro en línea</h3>
-						<img src="img/img04.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-3-Online-Registration-Form/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Cree un formulario de suscripción al boletín para una revista en línea utilizando campos de texto, casillas de verificación y botones.</p>
-
-						<p class="párrafo--pequeño">El formulario también funciona bien en teléfonos móviles.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="05">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Galería de fotos interactiva</h3>
-						<img src="img/img05.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-4-Interactive-Photo-Gallery/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Las galerías de imágenes interactivas son una característica común de muchos sitios web, desde sitios de fotos hasta aplicaciones de comercio electrónico.</p>
-
-						<p class="párrafo--pequeño">Usé HTML, CSS y el popular lenguaje de programación JavaScript para crear una galería de fotos interactiva y con capacidad de búsqueda.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="06">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Guía de estilo web</h3>
-						<img src="img/img06.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-5-Build-a-Web-Style-Guide/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Una guía de estilo es un documento que define los estilos y principios de diseño aceptados para una empresa.</p>
-
-						<p class="párrafo--pequeño">Se usan comúnmente en empresas para ayudar a crear diseños consistentes para diseño web y móvil.</p>
-
-						<p class="párrafo--pequeño"> Usé Sass y CSS para crear mi propia guía de estilo.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="07">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Reproductor de video interactivo</h3>
-						<img src="img/img07.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-6-Interactive-Video-Player/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Implementé un reproductor de video interactivo usando una biblioteca de terceros.</p>
-
-						<p class="párrafo--pequeño">Además construí una herramienta para añadirle interactividad al reproductor por medio de los subtítulos de apoyo.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="08">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Juego de adivinanza de palabras</h3>
-						<img src="img/img08.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-7-Build-a-Game-Show-App/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Usé JavaScript para crear un juego interactivo de adivinanzas basado en la web en el que los jugadores hacen clic en las letras de un teclado en pantalla para intentar adivinar una frase aleatoria.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="09">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Animaciones SVG</h3>
-						<img src="img/img09.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-8-SVG-Animations/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Aprendí a utilizar transformaciones y animaciones en CSS con este proyecto, ahora podré mejorar mis diseños agregando una nueva dimensión a los sitios web tradicionales.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="10">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Panel de aplicación web</h3>
-						<img src="img/img10.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/Project-9-Web-App-Dashboard/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Construí un panel interactivo para una aplicación web utilizando técnicas web avanzadas que incluyen gráficos SVG y programación JavaScript.</p>
-
-						<p class="párrafo--pequeño">El proyecto implicaba la creación de tablas, cuadros, gráficos y otros componentes de la interfaz de usuario de una manera que promueva la interactividad y la usabilidad.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="11">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Directorio de empleados</h3>
-						<img src="img/img11.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luiscobits.github.io/project-10-Employee-Directory/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">Muchos sitios (Twitter, Facebook, IMDB y Wikipedia, por nombrar algunos) ofrecen una gran cantidad de datos a los que podemos acceder y mostrar en nuestras propias páginas web.</p>
-
-						<p class="párrafo--pequeño">Con JavaScript, construí un directorio de empleados que se comunica con una API (interfaz de programación de aplicaciones) de terceros.</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-
-			<div class="proyecto" data-proyecto="12">
-				<div class="proyecto--presentación">
-					<div class="proyecto--portada">
-						<h3>Portafolio profesional</h3>
-						<img src="img/img12.png" alt="miniatura del proyecto.">
-					</div>
-					<div class="proyecto--acceso">
-						<a href="https://luisromero.co/">
-							visitar proyecto
-							<svg viewBox="0 0 448 512">
-								<path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="proyecto--info">
-					<div class="caja">
-						<p class="párrafo--pequeño">En este proyecto, construí un portafolio en línea para mostrar el trabajo que ha construido como parte del programa educativo Front End Web Development Techdegree de Treehouse.</p>
-
-						<p class="párrafo--pequeño">Reúní todas mis habilidades con HTML, CSS y JavaScript para construir una portafolio en línea divertido e interactivo.</p>
-
-						<p class="párrafo--pequeño"> Alojé el sitio en la web utilizando una empresa de alojamiento web (zeit.co).</p>
-					</div>
-				</div>
-				<svg class="icono--cerrar" viewBox="0 0 24 24">
-					<g>
-						<rect width="24" height="24" fill-opacity=".3" rx="12"/>
-						<polygon points="13.2 10.8 18 10.8 18 13.2 13.2 13.2 13.2 18 10.8 18 10.8 13.2 6 13.2 6 10.8 10.8 10.8 10.8 6 13.2 6"/>
-					</g>
-				</svg>
-			</div>
-		</section>
-
-		<footer>
-			<a class="logo" href="./">
-				<svg viewBox="0 0 1080 1080">
-					<g fill="none" fill-rule="evenodd">
-						<path fill="#3C3C3C" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201-1.387-6.521-11.861-7.702-31.424-3.544-88.033 18.712-162.127 54.908-328.412 90.253-19.563 4.158-31.424-3.544-35.582-23.107l-87.323-410.822c-4.158-19.563 3.544-31.424 23.107-35.582 166.285-35.345 240.38-71.54 328.412-90.253 19.563-4.158 31.424 3.544 35.582 23.107l10.396 48.907c104.335-22.177 225.871-27.563 364.608-16.159z"/>
-						<path fill="#2D2D2D" d="M991.9 210.936c-51.916 140.532-75.795 220.579-71.637 240.142 4.159 19.563 32.447 88.522 84.867 206.876-54.94-1.953-108.494 2.614-160.662 13.703-117.378 24.95-171.917 56.989-220.816 67.383-6.52 1.386-10.474-1.182-11.86-7.703-6.238-29.344 104.17-87.086 100.745-103.201l-85.244-401.04c104.335-22.178 225.871-27.564 364.608-16.16z"/>
-						<path fill="#3C3C3C" d="M329.302 913.354c-8.211 9.034-19.156 15.004-32.833 17.911-13.678 2.908-26.105 1.905-37.28-3.008a10 10 0 0 1-5.757-7.075L120.12 294.005c-7.277-34.236-36.621-27.998-43.898-62.233-6.238-29.345 19.681-75.748 53.916-83.025 34.235-7.277 76.787 24.572 83.024 53.917 7.277 34.235-22.067 40.472-14.79 74.708l133.31 627.177a10 10 0 0 1-2.381 8.805z"/>
-					</g>
-				</svg>
-			</a>
-			<span>Luis Romero · <span id="año-actual">####</span></span>
-		</footer>
-
-		<!-- Librería JS para copiar texto al portapapeles. -->
-		<script defer src="./js/clipboard-copy.js"></script>
-		<script defer src="./js/app.js"></script>
-	</body>
+	<!-- Librería JS para copiar texto al portapapeles. -->
+	<script defer src="./js/clipboard-copy.js"></script>
+	<script defer src="./js/app.js"></script>
+</body>
 </html>
