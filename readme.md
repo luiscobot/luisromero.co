@@ -1,1 +1,1 @@
-![logo personal.](img/github.png)
+![personal logo.](logo.png)
