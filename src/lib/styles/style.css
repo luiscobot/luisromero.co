@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'geomanist-bold';
+  src: local('Geomanist-Bold'),
+       url('/static/fonts/geomanist/geomanist-bold-webfont.woff2') format('woff2');
+}
+
+html { font-size: 62.5%; } /* set base font size to 10px */
+
+body { background-color: hsl(0, 0%, 7%); }
+
+::selection { background-color: #ff4a00; }
