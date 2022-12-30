@@ -1,7 +1,17 @@
 @font-face {
-  font-family: 'geomanist-bold';
+  font-family: 'Geomanist';
+  src: local('Geomanist-Regular'),
+       url('/static/fonts/geomanist/geomanist-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
   src: local('Geomanist-Bold'),
        url('/static/fonts/geomanist/geomanist-bold-webfont.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 html { font-size: 62.5%; } /* set base font size to 10px */

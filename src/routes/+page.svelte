@@ -39,7 +39,7 @@ header {
   padding: 10%;
   background-color: #000;
   color: white;
-  font-family: 'geomanist-bold', sans-serif;
+  font-family: 'Geomanist', sans-serif;
 }
 
 .logo {
@@ -49,6 +49,7 @@ header {
 h1 {
   margin-top: 20px;
   font-size: 3.5rem;
+  font-weight: bold;
   line-height: 3.5rem;
 }
 
@@ -62,6 +63,7 @@ h1 span::selection {
 
 p {
   font-size: 2rem;
+  font-weight: bold;
   line-height: 2rem;
 }
 
@@ -75,6 +77,7 @@ li {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  font-weight: normal;
   line-height: 1.5rem;
   color: hsl(0, 0%, 60%);
 }
