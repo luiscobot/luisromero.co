@@ -13,7 +13,7 @@ let currentYear = new Date().getFullYear();
     </svg>
   </a>
 
-  <span>Luis Romero · <span>{ currentYear }</span></span>
+  <span>Luis Romero · { currentYear }</span>
 </footer>
 
 <style>
@@ -34,7 +34,8 @@ footer {
 
 span {
   margin-top: 20px;
-  font-family: 'geomanist-bold', sans-serif;
+  font-family: 'Geomanist', sans-serif;
+  font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: #3c3c3c;
