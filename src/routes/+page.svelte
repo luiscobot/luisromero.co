@@ -35,7 +35,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 100vh;
+  height: 85vh;
   padding: 10%;
   background-color: #000;
   color: white;
@@ -76,6 +76,7 @@ li {
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.5rem;
+  color: hsl(0, 0%, 60%);
 }
 
 li svg {
@@ -87,5 +88,46 @@ li svg {
 
 .current-projects {
   margin-top: auto;
+}
+
+@media (min-width: 640px) {
+  h1,
+  .current-projects {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 60px;
+  }
+
+  h1,
+  .current-projects {
+    width: 60%;
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  li {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1,
+  .current-projects {
+    width: 50%;
+  }
 }
 </style>

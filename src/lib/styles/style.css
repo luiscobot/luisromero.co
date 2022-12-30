@@ -8,4 +8,7 @@ html { font-size: 62.5%; } /* set base font size to 10px */
 
 body { background-color: hsl(0, 0%, 7%); }
 
-::selection { background-color: #ff4a00; }
+::selection {
+  background-color: hsl(17, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+}
