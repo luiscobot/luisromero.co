@@ -13,7 +13,7 @@
     </svg>
   </a>
 
-  <h1>Construyo herramientas digitales que aportan <span>beneficios reales</span> a las personas<span>.</span></h1>
+  <h1>Bienvenido a mi <span>jardín digital</span> donde comparto lo que estoy aprendiendo en <span>tecnología</span>.</h1>
 
   <div class="current-projects">
     <p>Actualmente trabajo en:</p>
