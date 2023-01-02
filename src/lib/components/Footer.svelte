@@ -42,10 +42,6 @@ span {
   color: #3c3c3c;
 }
 
-span::selection {
-  color: #fff;
-}
-
 @media (min-width: 768px) {
   footer {
     padding: 60px;
