@@ -1,3 +1,7 @@
+<script>
+import { PUBLIC_NEWSLETTER_ID } from '$env/static/public';
+</script>
+
 <section>
   <h2>
     <svg viewBox="0 0 576 512">
@@ -6,7 +10,7 @@
     <span>Suscríbete a mi <mark>periódico mensual</mark> de tecnología.</span>
   </h2>
 
-  <form action="" method="POST">
+  <form action="https://forms.gosquared.com/post/{ PUBLIC_NEWSLETTER_ID }/b2960c8f-87c2-45f6-b42d-9b0aa460683f" method="POST">
     <label for="email">Correo electrónico</label>
     <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" />
     <button type="submit">Suscríbete al periódico</button>
