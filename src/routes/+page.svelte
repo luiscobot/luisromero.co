@@ -40,7 +40,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 85vh;
+  min-height: 85vh;
   padding: 10%;
   background-color: #000;
   color: #fff;
@@ -53,6 +53,7 @@ header {
 
 h1 {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 3.5rem;

@@ -12,7 +12,7 @@ import { PUBLIC_NEWSLETTER_ID } from '$env/static/public';
 
   <form action="https://forms.gosquared.com/post/{ PUBLIC_NEWSLETTER_ID }/b2960c8f-87c2-45f6-b42d-9b0aa460683f" method="POST">
     <label for="email">Correo electrónico</label>
-    <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" />
+    <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required />
     <button type="submit">Suscríbete al periódico</button>
   </form>
 </section>
@@ -111,5 +111,42 @@ form::after {
               #3ca3d6 84%, #3ca3d6 100%);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+@media (min-width: 640px) {
+  h2,
+  form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 60px;
+  }
+
+  h2,
+  form {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  form label,
+  form input,
+  form button {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2,
+  form {
+    width: 50%;
+  }
 }
 </style>
