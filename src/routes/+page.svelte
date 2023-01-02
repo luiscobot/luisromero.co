@@ -62,10 +62,6 @@ h1 span {
   color: #ff4a00;
 }
 
-h1 span::selection {
-  color: #000;
-}
-
 p {
   font-size: 2rem;
   font-weight: bold;
