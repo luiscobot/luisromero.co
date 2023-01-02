@@ -1,3 +1,7 @@
+<script>
+import Newsletter from '$lib/components/Newsletter.svelte';
+</script>
+
 <svelte:head>
   <title>Luis Romero &middot; Constructor digital</title>
 </svelte:head>
@@ -28,17 +32,18 @@
   </div>
 </header>
 
+<Newsletter />
+
 <style>
 header {
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 85vh;
   padding: 10%;
   background-color: #000;
-  color: white;
+  color: #fff;
   font-family: 'Geomanist', sans-serif;
 }
 
@@ -79,7 +84,7 @@ li {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 1.5rem;
-  color: hsl(0, 0%, 60%);
+  color: hsl(0, 0%, 48%);
 }
 
 li svg {
