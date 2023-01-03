@@ -1,5 +1,6 @@
 <script>
 import Newsletter from '$lib/components/Newsletter.svelte';
+import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -33,6 +34,8 @@ import Newsletter from '$lib/components/Newsletter.svelte';
 </header>
 
 <Newsletter />
+
+<Footer />
 
 <style>
 header {
