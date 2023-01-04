@@ -1,5 +1,6 @@
 <script>
-import Nav from '$lib/components/Nav.svelte';
+import Nav from '$lib/components/Nav.svelte'
+import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <svelte:head>
@@ -10,22 +11,21 @@ import Nav from '$lib/components/Nav.svelte';
 
 <section>
   <div class="thank-you">
-    <h1>¡Gracias!</h1>
+    <h1>¡Gracias por suscribirte!</h1>
     <h2>He recibido correctamente tu correo electrónico</h2>
   </div>
 </section>
 
+<Footer />
+
 <style>
 section {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: calc(100vh - 10% - 50px);
   padding: 10%;
   background-color: #000;
   color: #fff;
@@ -55,6 +55,7 @@ h2 {
 
 @media (min-width: 768px) {
   section {
+    height: calc(100vh - 120px - 50px);
     padding: 60px;
   }
 }
