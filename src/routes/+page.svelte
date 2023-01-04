@@ -36,7 +36,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 75vh;
   padding: 0 10% 10%;
   background-color: #000;
   color: #fff;
@@ -44,7 +43,6 @@ header {
 }
 
 h1 {
-  margin-bottom: 20px;
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 3.5rem;
@@ -83,7 +81,7 @@ li svg {
 }
 
 .current-projects {
-  margin-top: auto;
+  margin-top: 120px;
 }
 
 @media (min-width: 640px) {
