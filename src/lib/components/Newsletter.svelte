@@ -10,7 +10,7 @@ import { PUBLIC_NEWSLETTER_ID } from '$env/static/public';
     <span>Suscríbete a mi <mark>periódico mensual</mark> de tecnología.</span>
   </h2>
 
-  <form action="https://forms.gosquared.com/post/{ PUBLIC_NEWSLETTER_ID }/b2960c8f-87c2-45f6-b42d-9b0aa460683f" method="POST">
+  <form action="https://forms.gosquared.com/post/{PUBLIC_NEWSLETTER_ID}/b2960c8f-87c2-45f6-b42d-9b0aa460683f" method="POST">
     <label for="email">Correo electrónico</label>
     <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico" required />
     <button type="submit">Suscríbete al periódico</button>
@@ -83,7 +83,10 @@ form input::placeholder {
 
 form input:focus,
 form input:hover {
-  outline: 2px solid hsla(0, 0%, 24%, .2);
+  outline-color: hsla(0, 0%, 24%, .2);
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 form button {
