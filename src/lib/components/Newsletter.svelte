@@ -147,9 +147,8 @@ form::after {
 }
 
 @media (min-width: 1024px) {
-  h2,
   form {
-    width: 50%;
+    width: 40%;
   }
 }
 </style>
