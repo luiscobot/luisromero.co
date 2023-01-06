@@ -118,8 +118,7 @@ li svg {
 }
 
 @media (min-width: 1024px) {
-  h1,
-  .current-projects {
+  h1 {
     width: 50%;
   }
 }
