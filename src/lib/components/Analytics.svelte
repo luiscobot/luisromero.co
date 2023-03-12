@@ -1,7 +1,3 @@
-<script>
-import { PUBLIC_ANALYTICS_ID } from '$env/static/public';
-</script>
-
 <svelte:head>
 <script>
   !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};
@@ -9,7 +5,7 @@ import { PUBLIC_ANALYTICS_ID } from '$env/static/public';
   s.getElementsByTagName(q)[0];q.parentNode.insertBefore(d,q)}(window,document
   ,'script','_gs');
 
-  _gs('{ PUBLIC_ANALYTICS_ID }');
+  _gs('GSN-244058-E');
   _gs('set', 'anonymizeIP', true);
 </script>
 </svelte:head>
