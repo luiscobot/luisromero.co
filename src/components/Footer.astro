@@ -1,0 +1,15 @@
+---
+import PersonalLogo from "../assets/personal-logo.svg";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="flex flex-col items-center gap-5 mt-auto p-12 bg-neutral-950">
+    <a href="/">
+        <PersonalLogo class="w-12 grayscale" />
+    </a>
+
+    <span class="font-medium text-md text-neutral-700">
+        Luis Romero <span class="text-[#ff4a00]">·</span>
+        {currentYear}
+    </span>
+</footer>

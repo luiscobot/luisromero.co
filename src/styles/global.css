@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Geomanist", sans-serif;
+    background-color: hsl(0 0% 0%);
+    display: flex;
+    flex-direction: column;
+}
